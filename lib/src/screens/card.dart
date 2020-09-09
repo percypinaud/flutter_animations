@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 
 class MyCard extends StatelessWidget {
-  final int color_g;
-  final String texto;
+  final int color_b;
+  final Widget texto;
 
-  MyCard({this.color_g, this.texto});
+  MyCard({this.color_b, this.texto});
 
   @override
   Widget build(BuildContext context) {
     return Card(
       child: Container(
         alignment: Alignment.center,
-        padding: const EdgeInsets.all(8),
-        child: Text(texto),
-        color: Colors.grey[color_g],
+        child: texto,
+        color: Colors.grey[color_b],
       ),
     );
   }
